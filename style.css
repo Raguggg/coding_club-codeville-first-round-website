@@ -1,0 +1,149 @@
+h2{
+    user-select: none;
+}
+#events{
+    color: blue;
+}
+.popup{
+    background-color: #ffffff;
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+		background: #03549a;
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2{
+	margin-top: -20px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+.popup a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #1ade00;
+		border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+}
+.popup a:hover{
+    cursor: pointer;
+}
+img{
+    padding: 10px;
+}
+.top{
+    margin-left: 30%;
+    padding-top: 8px;
+    align-items: center;
+    user-select: none;
+}
+.title {
+    padding-top: 15px;
+    position: absolute;
+    display: inline;
+    font-family:arial black;
+    text-transform: uppercase;
+    font-size:40px;
+    background-image: 
+    linear-gradient(to right, red,blue); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: move 70s linear infinite;
+  }
+  
+  @keyframes move {
+    to {
+      background-position: 3500vh;
+    }
+  }
+
+
+.maintab{
+    padding: 10px;
+    display: none;
+    float:right;
+}
+iframe{
+    align-items: center;
+    position: absolute;
+    border: 0px;
+    margin-left: auto;
+    display: flex;
+    height:100vh;
+    width: 80%;
+}
+#forms{
+    display:none;
+}
+#oops{
+    display: none;
+}
+#tabLimit
+{
+    /* display: none; */
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(40, 136, 253);
+    border-radius:50%;
+    
+    display: flex;
+    /* position:relative; */
+}
+#tabLimit h1{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    margin: auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tabLimit h1{
+    animation: animate 
+        2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}

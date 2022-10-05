@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel=icon href="logo2.ico" type=image/x-icon>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="style.css">
+    <title>Coding Club EEE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="top">
+    <img src="logo.png" alt="" width="66px" height="90px">
+    <div class="title">CODINg club</div>
+</div>
+    <div class="container py-5" id="ips">
+        <div class="row">
+            <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded">
+                <h3 class="text-center fw-bold mb-3" id="events">CODEVILLE Round 1</h3>
+                <form name="google-sheet">
+                    <div id="form_alerts"></div>
+                    <div class="form-group mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label">Tab switch</label>
+                        <input id="tab" name="tab" class="form-control" value="0" rows="5" readonly>
+                        <p style="color: red;padding-left: 10px; text-transform: uppercase; font-size: 10px;" >you can not switch tab</p>
+                    </div>
+                    <div class="form-group mb-3">
+                        <button class="btn btn-primary me-2" type="submit">Next</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="forms">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbs6Akt9_RZmf8X_dkKDAy028CYvpM_fg2JuC6JCI7IbxIig/viewform?embedded=true">Loading…</iframe>
+    </div>
+    <div class="container py-5" id="oops">
+        <div class="row">
+            <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded">
+                <h2 class="text-center fw-bold mb-3">Oops!</h2>
+                <h4>You has reach more tab switched so your not eligible Contact administer</h4>
+            </div>
+        </div>
+    </div>
+    <div class="maintab" id="cc">
+    <div id="tabLimit">
+        <h1 id="abc">0</h1>
+    </div>
+</div>
+<div class="popup">
+    <h2 style="color: red;">❗Enable FullScreen❗</h2>
+    <p>
+         We recommend that you use full-screen mode.
+         So click the "Enable" button below.
+    </p>
+    <a onclick="full()">Enable</a>
+</div>
+<footer> <center><small>&copy; All rights reserved. <a href="http://ragu.great-site.net/"  target="_blank">RAGU G</a> , Inc.</small></center> </footer> 
+</body>
+</html>
